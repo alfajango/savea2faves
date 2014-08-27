@@ -20,15 +20,24 @@ function addCommas(nStr) {
 }
 
 function address(obj) {
-  var output = ""
-  if (obj.name && obj.name !== "") {
-    output += obj.name + "<br />";
-  }
-  output += obj.address_1;
+  var output = "",
+      mapParts = [],
+      mapAddress;
+
+  mapParts.push(obj.address_1);
   if (obj.address_2 && obj.address_2 !== "") {
-    output += "<br />" + obj.address_2;
+    mapParts.push(obj.address_2);
   }
-  output += "<br />" + obj.city + ", " + obj.state + " " + obj.zip;
+  mapParts.push(obj.city + ", " + obj.state + " " + obj.zip);
+
+  mapAddress = encodeURIComponent(mapParts.join(", ")).replace(/%20/g, "+")
+  mapParts.push("<a class='event-map-link' target='_blank' href='" + "https://maps.google.com/maps?f=q&hl=en&q=" + mapAddress + "'>Map</a>");
+
+  if (obj.name && obj.name !== "") {
+    mapParts.unshift("<span class='event-venue-name'>" + obj.name + "</span>");
+  }
+
+  output = mapParts.join("<br />");
   return output;
 }
 
