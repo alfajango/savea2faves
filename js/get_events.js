@@ -64,13 +64,13 @@ $.when(requestJSON, ready).then(function() {
       outputHTML += "</header>";
       outputHTML += "<section>" + e.description + "</section>";
       outputHTML += "<footer>";
-      outputHTML += "<div class='right'>";
-      outputHTML += "<div class='event-registered'>" + e.yes_rsvp_count + " people registered</div>";
-      outputHTML += "<a class='button' href='" + e.event_url + "'>+ Register</a>";
-      outputHTML += "</div>";
       outputHTML += "<div class='left'>";
       outputHTML += "<div class='event-when'><label>When:</label> <span class='event-datetime'>" + datetime(e.time) + "</span></div>";
       outputHTML += "<div class='event-where'><label>Where:</label> <address>" + address(e.venue) + "</address></div>";
+      outputHTML += "</div>";
+      outputHTML += "<div class='right'>";
+      outputHTML += "<div class='event-registered'>" + e.yes_rsvp_count + " people registered</div>";
+      outputHTML += "<a class='button' href='" + e.event_url + "'>+ Register</a>";
       outputHTML += "</div>";
       outputHTML += "</footer>";
       outputHTML += "</article>";
