@@ -1,0 +1,140 @@
+button, .button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: $button-color-main;
+  border-color: $brand-color-dark;
+  color: white;
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+
+  -webkit-box-shadow: 8px 6px 0px $brand-color;
+  -moz-box-shadow: 8px 6px 0px $brand-color;
+  box-shadow: 8px 6px 0px $brand-color;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $button-color-main-dark;
+  }
+}
+
+.header-container {
+  border-bottom-width: 8px;
+}
+
+#header-logo {
+  display: block;
+  position: absolute;
+  height: 150px;
+  top: 15px;
+
+  img {
+    height: 100%;
+  }
+}
+
+#social-links {
+  float: right;
+  margin: 0;
+
+  li {
+    float: left;
+    height: 1em;
+  }
+
+  a {
+    display: block;
+    padding: 10px 8px;
+  }
+}
+
+.splash-container {
+  background: url('/img/a2rb-splash-bg.jpg') no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 125px 0 45px;
+
+  h1 {
+    font-size: 3em;
+    line-height: 1.1em;
+  }
+
+  span {
+    margin-left: 20px;
+    font-size: 1.3em;
+  }
+}
+
+.post-splash-container {
+  background: $brand-color;
+  color: #fff;
+  padding: 25px 0;
+
+  a {
+    color: #fff;
+  }
+}
+
+.main aside {
+  border-top-color: $panel-color;
+}
+
+.pre-footer-container {
+  background: $panel-color;
+  color: #fff;
+  padding: 75px 0;
+
+  a {
+    color: #fff;
+  }
+}
+
+.footer-container {
+  border-top: none;
+  padding: 10px 0;
+
+  a {
+    color: #fff;
+  }
+}
+
+#attribute {
+  float: right;
+}
+
+@media only screen and (min-width: 40.063em) {
+  button, .button {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  nav a {
+    float: right;
+    padding: 12px 2%;
+  }
+}

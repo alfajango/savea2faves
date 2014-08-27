@@ -13,14 +13,20 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #002d56;
 $brand-color-dark: darken($brand-color, 25%);
+$brand-color-border: #ffffff;
+
+$panel-color: #0068b3;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 $light-grey-color: #cccccc;
+
+$button-color-main: #fdb825;
+$button-color-main-dark:  darken($button-color-main, 10%);
 
 $on-palm:          600px;
 $on-laptop:        800px;

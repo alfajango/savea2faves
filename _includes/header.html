@@ -4,7 +4,8 @@
 
 <div class="header-container">
   <header class="wrapper clearfix">
-    <h1 class="title">h1.title</h1>
+    <a id="header-logo" href="/"><img src="/img/a2rb-logo.png" /></a>
+
     <nav>
       <ul>
         {% for page in site.pages %}
@@ -14,5 +15,10 @@
         {% endfor %}
       </ul>
     </nav>
+
+    <ul id="social-links">
+      <li><a target="_blank" href="https://github.com/{{ site.github_username }}"><img src="/img/a2rb-social-icon-github.png" /></a></li>
+      <li><a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><img src="/img/a2rb-social-icon-twitter.png" /></a></li>
+    </ul>
   </header>
 </div>
