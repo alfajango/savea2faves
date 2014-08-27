@@ -21,15 +21,11 @@ button, .button {
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 2rem;
-  font-size: 1rem;
 
   -webkit-box-shadow: 8px 6px 0px $brand-color;
   -moz-box-shadow: 8px 6px 0px $brand-color;
   box-shadow: 8px 6px 0px $brand-color;
+
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -40,6 +36,44 @@ button, .button {
   &:hover {
     background-color: $button-color-main-dark;
   }
+}
+
+input {
+  border-style: solid;
+  border-width: 0px;
+  margin: 0 0 1.25rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #fff;
+  border-color: $brand-color-dark;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  &[name="email"] {
+    background: url("/img/a2rb-email-icon.png") no-repeat right 1rem center #fff;
+    margin-right: 0.5rem;
+  }
+}
+
+::-webkit-input-placeholder {
+   color: $panel-color;
+   font-weight: lighter;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: $panel-color;
+   font-weight: lighter;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $panel-color;
+   font-weight: lighter;
+}
+:-ms-input-placeholder {
+   color: $panel-color;
+   font-weight: lighter;
 }
 
 .header-container {
@@ -93,9 +127,21 @@ button, .button {
   background: $brand-color;
   color: #fff;
   padding: 25px 0;
+  text-align: center;
+  border-top: solid 8px #fff;
 
   a {
     color: #fff;
+    display: inline-block;
+    margin: 0 15px;
+
+    .google-groups-logo {
+      background: #fff;
+      padding: 10px 16px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -107,6 +153,7 @@ button, .button {
   background: $panel-color;
   color: #fff;
   padding: 75px 0;
+  text-align: center;
 
   a {
     color: #fff;
