@@ -1,5 +1,5 @@
 var domain = location,
-    url = location.host == 'a2rb.org' ? 'http://s3.alfajango.com/a2rb-meetup-events.json' : '/output.json',
+    url = location.host == 'a2rb.org' ? 'https://s3.amazonaws.com/a2rb/meetup-events.json' : '/output.json',
     ready = new $.Deferred,
     resultJSON,
     setJSON = function(data) {
