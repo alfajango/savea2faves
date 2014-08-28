@@ -276,13 +276,19 @@ footer {
     margin-bottom: 0;
   }
 
-  nav a {
-    float: right;
-    padding: 12px 2%;
+  nav {
+    width: auto;
+
+    a {
+      float: right;
+      padding: 12px 20px;
+      width: auto;
+    }
   }
 
   #social-links {
     margin-bottom: 0;
+    margin-right: 20px;
     float: right;
   }
 
