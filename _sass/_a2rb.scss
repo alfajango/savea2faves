@@ -32,6 +32,7 @@ button, .button {
   padding-bottom: 0.8rem;
   padding-left: 2.75rem;
   font-size: 1.25rem;
+  background: $button-color-main;
   background-color: $button-color-main;
   border-color: $brand-color-dark;
   color: white;
@@ -73,11 +74,19 @@ input {
   padding-bottom: 1.3625rem;
   padding-left: 2rem;
   font-size: 1rem;
+  background: #fff;
   background-color: #fff;
   border-color: $brand-color-dark;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+
+
+  &[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 
   &[name="email"] {
     background: url("/img/a2rb-email-icon.png") no-repeat right 1rem center #fff;
