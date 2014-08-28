@@ -24,7 +24,14 @@ layout: default
 <div class="main wrapper clearfix">
   <section>
     <h1>Upcoming Events</h1>
-    <div id="events" class="home" data-events="Ann-Arbor-Ruby">
+    <div id="events" class="home" data-events-group="Ann-Arbor-Ruby" data-events-status="upcoming">
+      <div data-event-loading class="panel info">Loading Events...</div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Recent Events</h1>
+    <div id="events" class="home" data-events-group="Ann-Arbor-Ruby" data-events-status="past">
       <div data-event-loading class="panel info">Loading Events...</div>
     </div>
   </section>

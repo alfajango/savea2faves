@@ -47,33 +47,45 @@ function datetime(timestamp) {
 }
 
 $.when(requestJSON, ready).then(function() {
-  $('[data-events]').each(function() {
+  $('[data-events-group]').each(function() {
     var $this = $(this),
-        group = resultJSON[$this.data("events")],
+        group = resultJSON[$this.data("events-group")],
         events = group ? group.events : [],
-        outputHTML = "";
+        outputHTML = "",
+        status = $this.data("events-status"),
+        count = 0;
 
+    events = events.sort(function(a, b) {
+      return b.time > a.time ? 1 : -1;
+    });
 
     console.log(this, events);
     $.each(events, function(i, e) {
-      console.log(e);
-      outputHTML += "<article class='clearfix'>"
-      outputHTML += "<header>";
-      outputHTML += "<div class='event-posted'>Posted " + datetime(e.created) + "</div>";
-      outputHTML += "<h1>" + e.name + "</h1>";
-      outputHTML += "</header>";
-      outputHTML += "<section>" + e.description + "</section>";
-      outputHTML += "<footer>";
-      outputHTML += "<div class='left'>";
-      outputHTML += "<div class='event-when'><label>When:</label> <span class='event-datetime'>" + datetime(e.time) + "</span></div>";
-      outputHTML += "<div class='event-where'><label>Where:</label> <address>" + address(e.venue) + "</address></div>";
-      outputHTML += "</div>";
-      outputHTML += "<div class='right'>";
-      outputHTML += "<div class='event-registered'>" + e.yes_rsvp_count + " people registered</div>";
-      outputHTML += "<a class='button' href='" + e.event_url + "'>+ Register</a>";
-      outputHTML += "</div>";
-      outputHTML += "</footer>";
-      outputHTML += "</article>";
+      if (e.status === status && count < 5) {
+        console.log(e);
+        count++;
+        outputHTML += "<article class='clearfix'>"
+        outputHTML += "<header>";
+        outputHTML += "<div class='event-posted'>Posted " + datetime(e.created) + "</div>";
+        outputHTML += "<h1>" + e.name + "</h1>";
+        outputHTML += "</header>";
+        outputHTML += "<section>" + e.description + "</section>";
+        outputHTML += "<footer>";
+        outputHTML += "<div class='left'>";
+        outputHTML += "<div class='event-when'><label>When:</label> <span class='event-datetime'>" + datetime(e.time) + "</span></div>";
+        outputHTML += "<div class='event-where'><label>Where:</label> <address>" + address(e.venue) + "</address></div>";
+        outputHTML += "</div>";
+        outputHTML += "<div class='right'>";
+        outputHTML += "<div class='event-registered'>" + e.yes_rsvp_count + " people registered</div>";
+        if (e.status === "upcoming") {
+          outputHTML += "<a class='button' href='" + e.event_url + "'>+ Register</a>";
+        } else {
+          outputHTML += "<a class='button secondary' href='" + e.event_url + "'>View Event</a>";
+        }
+        outputHTML += "</div>";
+        outputHTML += "</footer>";
+        outputHTML += "</article>";
+      }
     })
 
     $this.find('[data-event-loading]').remove();

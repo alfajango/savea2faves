@@ -25,9 +25,12 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 $light-grey-color: #cccccc;
+$lighter-grey-color: #dedede;
 
 $button-color-main: #fdb825;
 $button-color-main-dark:  darken($button-color-main, 10%);
+$button-color-secondary: #0068b3;
+$button-color-secondary-dark:  darken($button-color-secondary, 10%);
 
 $on-palm:          600px;
 $on-laptop:        800px;

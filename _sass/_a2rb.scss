@@ -37,8 +37,16 @@ button, .button {
   font-weight: bold;
   text-transform: uppercase;
 
+  &.secondary {
+    background-color: $button-color-secondary;
+  }
+
   &:hover {
     background-color: $button-color-main-dark;
+
+    &.secondary {
+      background-color: $button-color-secondary-dark;
+    }
   }
 }
 
@@ -171,13 +179,13 @@ article {
     color: $light-grey-color;
     text-align: center;
     padding-top: 10px;
-    border-top: solid 5px $light-grey-color;
+    border-top: solid 2px $lighter-grey-color;
     text-transform: uppercase;
     font-size: 0.8em;
     font-weight: bold;
   }
   &:first-child .event-posted {
-    border-top: none;
+    border-top-width: 5px;
   }
 
   h1 {
