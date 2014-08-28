@@ -10,7 +10,10 @@
 </div>
 <div class="footer-container">
   <footer class="wrapper">
-    &copy; Ann Arbor Ruby Brigade
+    &copy;<span id="copyright-year"></span> Ann Arbor Ruby Brigade
+    <script>
+      document.getElementById("copyright-year").innerHTML = " " + (new Date()).getFullYear();
+    </script>
 
     <span id="attribute">
       Site and Logo by <a href="http://www.alfajango.com">Alfa Jango</a>.
