@@ -287,10 +287,18 @@ footer {
   nav {
     width: auto;
 
-    a {
-      float: right;
-      padding: 12px 20px;
-      width: auto;
+    ul {
+      height: 50px;
+
+      li {
+        display: inline-block;
+
+        a {
+          float: right;
+          padding: 12px 20px;
+          width: auto;
+        }
+      }
     }
   }
 
@@ -302,6 +310,10 @@ footer {
 
   .splash-container {
     padding: 125px 0 45px;
+
+    &.page {
+      padding: 100px 0px 35px;
+    }
 
     h1 {
       font-size: 3em;
