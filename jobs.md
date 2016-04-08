@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jobs
-long_title: Job Postings on A2RB
+long_title: Local Job Openings
 permalink: /jobs/
 ---
 
