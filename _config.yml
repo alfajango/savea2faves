@@ -1,12 +1,12 @@
 # Site settings
-title: Ann Arbor Ruby Brigade
-email: support@a2rb.org
+title: Save Ann Arbor Favorite Businesses
+email: support@savea2faves.org
 description: > # this means to ignore newlines until "baseurl:"
-  Ann Arbor Ruby Brigade is a Ruby language user group for beginners and experts.
+  Buy gift cards to help save local Ann Arbor businesses and jobs.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://a2rb.org" # the base hostname & protocol for your site
-twitter_username: a2rb
-github_username:  a2rb
+url: "http://:ww.savea2faves.org" # the base hostname & protocol for your site
+twitter_username: savea2faves
+github_username:  savea2faves
 
 # Build settings
 markdown: kramdown

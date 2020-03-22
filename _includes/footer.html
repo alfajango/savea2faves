@@ -10,14 +10,14 @@
 </div>
 <div class="footer-container">
   <footer class="wrapper">
-    &copy;<span id="copyright-year"></span> Ann Arbor Ruby Brigade
+    &copy;<span id="copyright-year"></span> Save A2 Faves
     <script>
       document.getElementById("copyright-year").innerHTML = " " + (new Date()).getFullYear();
     </script>
 
-    <span id="attribute">
-      Site and Logo by <a href="http://www.alfajango.com">Alfa Jango</a>.
-    </span>
+    {% comment %}<span id="attribute">{% endcomment %}
+      {% comment %}Site and Logo by <a href="http://www.alfajango.com">Alfa Jango</a>.{% endcomment %}
+    {% comment %}</span>{% endcomment %}
   </footer>
 </div>
 
@@ -25,7 +25,7 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
 <script src="/js/vendor/moment.js"></script>
 
-<script src="/js/get_events.js"></script>
+<script src="/js/savea2faves.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

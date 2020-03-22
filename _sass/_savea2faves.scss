@@ -399,6 +399,7 @@ footer {
   input {
     &[name="email"] {
       margin-right: 0.5rem;
+      width: 300px;
     }
   }
 
@@ -412,5 +413,46 @@ footer {
 
   #attribute {
     float: right;
+  }
+}
+
+#businesses {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+  align-items: stretch;
+
+  li {
+    display: block;
+    margin: 0 5px 5px 0;
+    flex: 1 1 200px;
+
+    a {
+      border-radius: 5px;
+      display: block;
+      min-width: 200px;
+      min-height: 200px;
+      padding: 5px 8px;
+      background: #0168B3;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+
+      h3 {
+      }
+
+      address {
+        font-size: 0.8rem;
+        font-style: normal;
+        margin: 15px 0 35px;
+
+        span {
+          display: block;
+          line-height: 0.9rem;
+        }
+      }
+    }
   }
 }

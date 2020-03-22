@@ -5,34 +5,33 @@ layout: default
 <div class="splash-container">
   <div class="wrapper clearfix">
     <h1>
-      Ann Arbor Ruby Brigade is a Ruby language user group for beginners and experts.
+      Buy gift cards to help save local Ann Arbor businesses and jobs.
     </h1>
-
-    <a class="button" href="http://www.meetup.com/Ann-Arbor-Ruby/">+ Join the Group</a>
-    <span>Join us the last Tuesday of every month!</span>
   </div>
 </div>
 
 <div class="post-splash-container">
   <div class="wrapper clearfix">
-    Join us on:
-    <a href="http://www.meetup.com/Ann-Arbor-Ruby/"><img src="/img/meetup-logo-white.png" alt="Meetup.com" /></a>
-    <a href="https://groups.google.com/forum/#!forum/a2rb"><img class="" src="/img/google-groups-logo-white.png" alt="Google Groups" /></a>
+    Click on a business below to purchase a gift card.
   </div>
 </div>
 
 <div class="main wrapper clearfix">
   <section>
-    <h1>Upcoming Events</h1>
-    <div id="events" class="home" data-events-group="Ann-Arbor-Ruby" data-events-status="upcoming">
-      <div data-event-loading class="panel info">Loading Events...</div>
+    <h1>Ann Arbor Businesses</h1>
+    <ul id="businesses" class="home">
+      {% for business in site.data.businesses %}
+        <li>
+          <a href="{{ business.url }}" target="_blank">
+            <address>
+              <span class="town">{{ business.town }}</span>
+              <span class="category">{{ business.category }}</span>
+            </address>
+            <h3>{{ business.name }}</h3>
+          </a>
+        </li>
+      {% endfor %}
     </div>
   </section>
 
-  <section>
-    <h1>Recent Events</h1>
-    <div id="events" class="home" data-events-group="Ann-Arbor-Ruby" data-events-status="past">
-      <div data-event-loading class="panel info">Loading Events...</div>
-    </div>
-  </section>
 </div>
