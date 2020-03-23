@@ -13,6 +13,16 @@ layout: default
 <div class="post-splash-container">
   <div class="wrapper clearfix">
     Click on a business below to purchase a gift card.
+
+    {% if site.meetup or site.google_groups %}
+      Join us on:
+    {% endif %}
+    {% if site.meetup %}
+      <a href="http://www.meetup.com/{{ site.meetup }}/"><img src="/img/meetup-logo-white.png" alt="Meetup.com" /></a>
+    {% endif %}
+    {% if site.google_groups %}
+      <a href="https://groups.google.com/forum/#!forum/{{ site.google_groups }}"><img class="" src="/img/google-groups-logo-white.png" alt="Google Groups" /></a>
+    {% endif %}
   </div>
 </div>
 
