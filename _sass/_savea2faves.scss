@@ -15,6 +15,16 @@ h1 {
   color: $brand-color;
 }
 
+
+h2 {
+  color: #015FA5;
+}
+
+h3 {
+  color: #0168B3;
+}
+
+
 button, .button {
   border-style: solid;
   border-width: 0px;
@@ -279,6 +289,7 @@ article {
   }
 
   h2 {
+    color: #fff;
     -webkit-text-shadow: 2px 3px 0 $brand-color;
     -moz-text-shadow: 2px 3px 0 $brand-color;
     text-shadow: 2px 3px 0 $brand-color;
@@ -327,6 +338,7 @@ footer {
           float: right;
           padding: 12px 20px;
           width: auto;
+          background: transparent;
         }
       }
     }
@@ -432,6 +444,7 @@ footer {
     a {
       border-radius: 5px;
       display: block;
+      position: relative;
       min-width: 200px;
       min-height: 200px;
       padding: 5px 8px;
@@ -439,8 +452,16 @@ footer {
       color: #fff;
       text-align: center;
       text-decoration: none;
+      transition: background 1s linear;
+
+      &:hover {
+        bottom: 1px;
+        right: 1px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      }
 
       h3 {
+        color: #fff;
       }
 
       address {
@@ -454,5 +475,13 @@ footer {
         }
       }
     }
+  }
+}
+
+#homepage-about {
+  padding: 50px 0 30px;
+
+  h2 {
+    margin-top: 40px;
   }
 }
