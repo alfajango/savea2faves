@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
-long_title: About Save MI Faves
-permalink: /about/
+title: FAQ
+long_title: Save MI Faves Frequently Asked Questions
+permalink: /faq/
 ---
 
 # FAQ
