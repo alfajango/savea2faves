@@ -1,3 +1,6 @@
+// ---------------------------------------------------------------
+// Colors
+// ---------------------------------------------------------------
 var projectColors, saturation, brightness, hue, borderSaturationDarkerBy, ratio;
 
 function getColorLevels() {
@@ -52,3 +55,88 @@ function generateCssSeriesColor(project) {
 }
 
 setColors();
+
+// ---------------------------------------------------------------
+// Dynatable
+// ---------------------------------------------------------------
+
+var $filters = $('.filter');
+var optionValues = {};
+var htmlOptions;
+
+$filters.each(function(i, el) {
+  optionValues[$(el).prop('name')] = new Set();
+})
+
+// Function that renders the list items from our records
+function ulWriter(rowIndex, record, columns, cellWriter) {
+  return '<li><a href="' + record.url + '" target="_blank" style="background: ' + record.background + '; border-color: ' + record.borderColor + '"><address><span class="town">' + record.town + '</span><span class="category">' + record.category + '</span></address><h3>' + record.name + '</h3></a></li>';
+}
+
+// Function that creates our records from the DOM when the page is loaded
+function ulReader(index, li, record) {
+  var $li = $(li);
+  var a = $(li).find('a').get(0);
+  record.url = a.href;
+  record.town = $li.find('.town').text();
+  record.category = $li.find('.category').text();
+  record.name = $li.find('h3').text();
+  record.background = a.style.background;
+  record.borderColor = a.style.borderColor;
+
+  Object.keys(optionValues).forEach(function(key) {
+    optionValues[key].add(record[key]);
+  });
+}
+
+function setupOptions(dynatable) {
+  Object.keys(optionValues).forEach(function(key) {
+    dynatable.queries.functions[key] = function(record, value) {
+      return record[key] == value;
+    };
+  });
+}
+
+function updateOptions() {
+  if (!htmlOptions) {
+    htmlOptions = {};
+
+    Object.keys(optionValues).forEach(function(key) {
+      htmlOptions[key] = [];
+      optionValues[key].forEach(function(value) {
+        htmlOptions[key].push('<option>' + value + '</option>');
+      });
+      $('.filter[name=' + key + ']').append(htmlOptions[key].join(''));
+    });
+  }
+}
+
+var dynatable = $('#businesses')
+  .bind('dynatable:init', function(e, dynatable) {
+    setupOptions(dynatable);
+    $('#filters').show();
+  })
+  .bind('dynatable:afterRead', updateOptions)
+  .dynatable({
+    features: {
+      paginate: false
+    },
+    table: {
+      bodyRowSelector: 'li'
+    },
+    writers: {
+      _rowWriter: ulWriter
+    },
+    readers: {
+      _rowReader: ulReader
+    },
+    params: {
+      records: 'Faves'
+    },
+    inputs: {
+      queryEvent: 'blur change keyup',
+      queries: $filters,
+      searchTarget: '#filters',
+      searchPlacement: 'append'
+    }
+  }).data('dynatable');

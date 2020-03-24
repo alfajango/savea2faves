@@ -437,6 +437,7 @@ footer {
   padding: 0;
   justify-content: space-between;
   align-items: stretch;
+  width: 100%;
 
   li {
     display: block;
@@ -480,9 +481,36 @@ footer {
   }
 }
 
+
+.dynatable-search {
+  float: unset;
+  display: inline-block;
+
+  input {
+    background: #fff;
+    border: solid 1px #ccc;
+    padding: 5px 8px;
+    line-height: 1rem;
+    vertical-align: unset;
+    margin: 0 5px 0 0;
+  }
+}
+
+#filters {
+  display: none;
+  margin-bottom: 15px;
+
+  .filter-container {
+    margin-right: 5px;
+    display: inline-block;
+
+    .filter {
+      line-height: 1rem;
+      vertical-align: bottom;
+    }
+  }
+}
+
 #homepage-about {
   padding: 1em 0 1.5em;
-
-  h2 {
-  }
 }

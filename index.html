@@ -31,6 +31,20 @@ layout: default
 <div class="main wrapper clearfix">
   <section>
     <h1>Ann Arbor Businesses</h1>
+    <div id="filters">
+      <span id="search-category-filter" class="filter-container">
+        Category:
+        <select id="search-category" class="filter" name="category">
+          <option></option>
+        </select>
+      </span>
+      <span id="search-town-filter" class="filter-container">
+        Town:
+        <select id="search-town" class="filter" name="town">
+          <option></option>
+        </select>
+      </span>
+    </div>
     <ul id="businesses" class="home">
       {% assign sorted_businesses = site.data.businesses | sort: 'name' %}
       {% for business in sorted_businesses %}
