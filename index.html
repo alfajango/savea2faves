@@ -32,7 +32,8 @@ layout: default
   <section>
     <h1>Ann Arbor Businesses</h1>
     <ul id="businesses" class="home">
-      {% for business in site.data.businesses %}
+      {% assign sorted_businesses = site.data.businesses | sort: 'name' %}
+      {% for business in sorted_businesses %}
         <li>
           <a href="{{ business.url }}" target="_blank">
             <address>
