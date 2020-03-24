@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://:www.saveamiaves.org" # the base hostname & protocol for your site
 #google_groups: savemifaves
 #meetup: Save-MI-Faves
-#twitter_username: savemifaves
+twitter_username: saveMIfaves
 github_username:  alfajango/savemifaves
 google_analytics: "UA-161660791-1"
 
