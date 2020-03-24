@@ -3,9 +3,10 @@ title: Save Michigan Favorite Businesses
 copyright: Save MI Faves
 email: support@savemifaves.org
 description: > # this means to ignore newlines until "baseurl:"
-  Buy gift cards to help save local Michigan businesses and jobs.
+  Buy gift cards to help save local Michigan businesses and jobs during this COVID-19 pandemic.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://:www.saveamiaves.org" # the base hostname & protocol for your site
+url: "https://www.savemifaves.org" # the base hostname & protocol for your site
+preview_image: "/img/save-mi-faves-preview.png"
 #google_groups: savemifaves
 #meetup: Save-MI-Faves
 twitter_username: saveMIfaves
