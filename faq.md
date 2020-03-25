@@ -28,7 +28,7 @@ If you are outside Michigan and would like to build a similar site for your comm
 People have also launched similar tools for their specific cities, or even nationally. Check out [Help Main Street](https://helpmainstreet.com/), [GiveLocal](https://givelocal.co/), and [Rally for Restaurants](https://rallyforrestaurants.com/).
 
 ### Who built this? And why?
-We’re a small team of entrepreneurs from Ann Arbor, led by Josh Botkin (of the [University of Michigan](http://zli.umich.edu/) and [HistoSonics](https://ww2.frost.com/wp-content/uploads/2019/12/HistoSonics-Award-Write-Up.pdf)) and Steve Schwartz (of [Alfa Jango](https://www.alfajango.com/) and [Genomenon](https://www.genomenon.com/)). Our terrific logo was designed by Steve’s colleague Kevin Ryan (of [Alfa Jango](https://www.alfajango.com/)).
+We’re a small team of entrepreneurs from Ann Arbor, led by Josh Botkin (of the [University of Michigan](http://zli.umich.edu/) and [HistoSonics](https://ww2.frost.com/wp-content/uploads/2019/12/HistoSonics-Award-Write-Up.pdf)) and Steve Schwartz (of [Alfa Jango](https://www.alfajango.com/) and [Genomenon](https://www.genomenon.com/)). Our terrific logo was designed by Steve’s colleague, Kevin Ryan (of [Alfa Jango](https://www.alfajango.com/)).
 
 But mostly, we’re loyal customers who are concerned about what these local businesses are going through and want to do whatever we can to help keep them afloat. We’re no longer going out because of COVID-19, so we started buying gift cards to help support our favorite cafes and restaurants during this unpredictable time – and we want to enable others to do so as well.
 
