@@ -51,7 +51,8 @@ layout: default
         <li>
           <a href="{{ business.url }}" target="_blank">
             <address>
-              <span class="town">{{ business.town }}</span>
+              {% assign towns = business.town | split: '|' %}
+              <span class="town" title="{{ towns | join: ', ' }}">{{ towns | join: ', ' }}</span>
               <span class="category">{{ business.category }}</span>
             </address>
             <h3>{{ business.name }}</h3>

@@ -450,7 +450,7 @@ footer {
       position: relative;
       min-width: 200px;
       min-height: 200px;
-      padding: 5px 8px;
+      padding: 10px 16px;
       background: #0168B3;
       color: #fff;
       text-align: center;
@@ -470,11 +470,15 @@ footer {
       address {
         font-size: 0.8rem;
         font-style: normal;
-        margin: 15px 0 35px;
+        margin: 0 0 35px;
+        display: grid;
 
         span {
           display: block;
           line-height: 0.9rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }
@@ -508,6 +512,14 @@ footer {
       line-height: 1rem;
       vertical-align: bottom;
     }
+  }
+}
+
+.dynatable-pagination-links {
+  margin: 0;
+
+  .dynatable-active-page {
+    background: #0168B3;
   }
 }
 
