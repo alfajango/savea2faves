@@ -70,7 +70,7 @@ $filters.each(function(i, el) {
 
 // Function that renders the list items from our records
 function ulWriter(rowIndex, record, columns, cellWriter) {
-  return '<li><a href="' + record.url + '" target="_blank" style="background: ' + record.background + '; border-color: ' + record.borderColor + '"><address><span class="town">' + record.town + '</span><span class="category">' + record.category + '</span></address><h3>' + record.name + '</h3></a></li>';
+  return '<li><a href="' + record.url + '" target="_blank" style="background: ' + record.background + '; border-color: ' + record.borderColor + '"><address><span class="town" title="' + record.town.join(', ') + '">' + record.town.join(', ') + '</span><span class="category">' + record.category + '</span></address><h3>' + record.name + '</h3></a></li>';
 }
 
 // Function that creates our records from the DOM when the page is loaded
@@ -78,21 +78,24 @@ function ulReader(index, li, record) {
   var $li = $(li);
   var a = $(li).find('a').get(0);
   record.url = a.href;
-  record.town = $li.find('.town').text();
+  record.town = $li.find('.town').text().split(', ');
   record.category = $li.find('.category').text();
   record.name = $li.find('h3').text();
   record.background = a.style.background;
   record.borderColor = a.style.borderColor;
 
   Object.keys(optionValues).forEach(function(key) {
-    optionValues[key].add(record[key]);
+    values = Array.isArray(record[key]) ? record[key] : [record[key]];
+    values.forEach(function(value) {
+      optionValues[key].add(value);
+    });
   });
 }
 
 function setupOptions(dynatable) {
   Object.keys(optionValues).forEach(function(key) {
     dynatable.queries.functions[key] = function(record, value) {
-      return record[key] == value;
+      return Array.isArray(record[key]) ? record[key].indexOf(value) > -1 : record[key] == value;
     };
   });
 }
@@ -103,7 +106,14 @@ function updateOptions() {
 
     Object.keys(optionValues).forEach(function(key) {
       htmlOptions[key] = [];
+
+      // Array.from and [...] spread operator have more limited browser support
+      var sortableValues = [];
       optionValues[key].forEach(function(value) {
+        sortableValues.push(value);
+      });
+
+      sortableValues.sort().forEach(function(value) {
         htmlOptions[key].push('<option>' + value + '</option>');
       });
       $('.filter[name=' + key + ']').append(htmlOptions[key].join(''));
@@ -119,7 +129,7 @@ var dynatable = $('#businesses')
   .bind('dynatable:afterRead', updateOptions)
   .dynatable({
     features: {
-      paginate: false
+      perPageSelect: false
     },
     table: {
       bodyRowSelector: 'li'
@@ -138,5 +148,8 @@ var dynatable = $('#businesses')
       queries: $filters,
       searchTarget: '#filters',
       searchPlacement: 'append'
+    },
+    dataset: {
+      perPageDefault: 48
     }
   }).data('dynatable');
