@@ -26,7 +26,7 @@
   </footer>
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
 <script src="/js/vendor/moment.js"></script>
 <script src="/js/vendor/jquery.dynatable.js"></script>
@@ -41,6 +41,28 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-161660791-1');
+    gtag('config', '{{ site.google_analytics }}');
+
+    /**
+    * Function that captures a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var outboundLink = function(name, url) {
+      var label = name + '; ' + url;
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': label
+      });
+    }
+
+    $(document).on('click', '#businesses a', function() {
+      var $this = $(this),
+          name = $this.find('h3').text(),
+          url = $this.prop('href');
+
+      outboundLink(name, url);
+    });
   </script>
 {% endif %}
