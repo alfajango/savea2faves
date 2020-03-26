@@ -8,10 +8,10 @@ permalink: /faq/
 # FAQ
 ## For Restaurant-goers
 ### What is Save MI Faves?
-Save MI Faves is a directory of Ann Arbor restaurants and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town.
+Save MI Faves is a directory of Michigan restaurants and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town.
 
 ### Why isn’t my favorite business on your site?
-Please help us add your fave Michigan food & beverage spots [here](/submit/). We're open to adding more small business categories if this catches on.
+Please help us add your favorite Michigan businesses (restaurants, bookstores, barbershops, etc.) [here](/submit/).
 
 ### How else can I support our local businesses beyond purchasing a gift card?
 
@@ -20,8 +20,7 @@ Please help us add your fave Michigan food & beverage spots [here](/submit/). We
 *	Consider purchasing one or more “Flatten the Curve” T-shirts from Underground Printing’s [Hospitality Fundraiser](https://pogo.undergroundshirts.com/collections/ann-arbor-hospitality-fundraiser?aff=22), with proceeds going to support Ann Arbor restaurants.
 *	Encourage the government to get involved. Sign this [Michigan petition](https://www.change.org/p/michigan-state-house-compensate-michigan-small-business-owners?original_footer_petition_id=20311463&algorithm=promoted&source_location=petition_footer&grid_position=11&pt=AVBldGl0aW9uABulPgEAAAAAXm%2FKuNQejk01MTI0YmMyMA%3D%3D) to encourage state lawmakers to compensate small businesses affected by the shutdown of restaurants and bars. You can also call your US Representative and your Senators via the Capitol switchboard (202-224-3121) to demand that small businesses are part of the federal stimulus plan.
 
-### Why is this just for the Ann Arbor area? Can you do this for my city?
-As Ann Arbor residents, we started this project for our community. We hope to expand to other areas in Michigan in the future. To help grow our directory, please add information about your favorite Michigan food & drink businesses that sell gift cards online [here](/submit/).
+To help grow our directory, please add information about your favorite Michigan businesses that sell gift cards online [here](/submit/).
 
 If you are outside Michigan and would like to build a similar site for your community, our source code is available via GitHub. You can find it [here](https://github.com/{{ site.github_username }}).
 
@@ -36,7 +35,7 @@ We were inspired by a similar Bay Area project ([www.SaveOurFaves.org](https://w
 
 ## For Businesses
 ### Why isn’t my business listed on your site?
-If you operate a Michigan-based food & drink business that sells gift cards online, please add your company’s info [here](/submit/). We hope to expand beyond food & drink businesses, so if you operate a different type of business please check back soon.
+If you operate a Michigan-based business that sells gift cards online, please add your company’s info [here](/submit/).
 
 ### How can I start offering online gift cards?
 The first step is to check with your Point-of-Sale (POS) technology provider. Many vendors (e.g. Square, Toast, ShopKeep) offer their own gift card features, and others integrate with specific third-party providers. If your POS provider doesn’t offer gift cards or integrate with third-party providers, there are some reasonable standalone eGift Card apps like GiftUp or GiftFly. If you’re considering other options, make sure that your business receives the fee for the gift card as soon as the customer purchases the card (otherwise that won’t help you during the crisis). Some services may also ask customers to pay an additional fee when they buy a gift card but be sure it’s a small amount.
