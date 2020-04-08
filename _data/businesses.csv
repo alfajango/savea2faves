@@ -31,7 +31,7 @@ Food & Drink,Ann Arbor,Grange Kitchen & Bar,https://squareup.com/gift/VVVSEGX08K
 Food & Drink,Ann Arbor,Gratzi,http://gratzirestaurant.com/giftcards/,TRUE
 Food & Drink,Ann Arbor,Grizzly Peak Brewing Co.,https://www.grizzlypeak.net/gift-cards,TRUE
 Food & Drink,Ann Arbor,Homes Brewery,http://www.homesbrewery.com/shop,TRUE
-Food & Drink,Ann Arbor,Hopcat Ann Arbor,https://hopcat.myguestaccount.com/guest/egift,TRUE
+Food & Drink,Ann Arbor|Detroit|East Lansing|Grand Rapids|Holland|Kalamazoo|Royal Oak,Hopcat,https://hopcat.myguestaccount.com/guest/egift,TRUE
 Food & Drink,Ann Arbor,Isalita,https://www.toasttab.com/isalita-cantina/giftcards,TRUE
 Food & Drink,Ann Arbor|Dearborn|Detroit|Dexter|Grand Rapids|Royal Oak|Traverse City,Jolly Pumpkin,https://nubco.worldsecuresystems.com/jp/GiftCards,TRUE
 Food & Drink,Ann Arbor,Knight's Steakhouse,https://knightsrestaurants.com/gift-cards,TRUE
@@ -188,7 +188,7 @@ Food & Drink,Chelsea,Chelsea Alehouse Brewery,https://chelsea-alehouse.square.si
 Food & Drink,Tecumseh,Tecumseh Brewing Co.,https://shop.tecumsehbrewingco.com/,TRUE
 Food & Drink,Petoskey,Beards Brewery,https://shop.beardsbrewery.com/collections/gift-cards,TRUE
 Food & Drink,Ann Arbor,The Jefferson Market,https://squareup.com/gift/VAB32FSYMPVAX/order,TRUE
-Food & Drink,Ypsilanti ,MAIZ Mexican Cantina,https://www.toasttab.com/maiz-mexican-cantina/giftcards,TRUE
+Food & Drink,Ypsilanti,MAIZ Mexican Cantina,https://www.toasttab.com/maiz-mexican-cantina/giftcards,TRUE
 Food & Drink,Ferndale,Imperial,https://squareup.com/gift/P1XCJH02XDJ1B/order,TRUE
 Food & Drink,Saint Johns,Waypoint Coffee Company,https://squareup.com/gift/0VY8JAS28X52E/order,TRUE
 Food & Drink,Ann Arbor,Cafe Royale,https://swipeit.com/product/436/espresso-royale,TRUE
@@ -299,7 +299,7 @@ Other,South Lyon,Friends of the Salem-South Lyon District Library,https://square
 Food & Drink,Beulah ,Five Shores Brewery ,https://www.fiveshoresbrewing.com/,TRUE
 Food & Drink,Frankfort,Stormcloud Brewing Co.,https://www.stormcloudbrewing.com/gift-cards,TRUE
 Food & Drink,Petoskey,Chandler's - A Restaurant ,https://www.symonsgeneralstore.com/gift-cards-1,TRUE
-Other,Ypsilanti ,Massage Mechanics,https://squareup.com/gift/TK8HHKQ1ZXV4S/order,TRUE
+Other,Ypsilanti,Massage Mechanics,https://squareup.com/gift/TK8HHKQ1ZXV4S/order,TRUE
 Other,South Lyon,South Lyon Cycle,https://www.southlyoncycle.com/product-list/gift-cards-1250/gift-cards-1221/,TRUE
 Food & Drink,South Lyon,Witch's Hat Brewing Company,https://www.witchshatbrewing.com/shop-1,TRUE
 Food & Drink,Beulah ,Lucky Dog Bar and Grille,https://squareup.com/gift/6YMS84E3Z7JVK/order,TRUE
@@ -315,7 +315,7 @@ Other,Manchester,Unforgettable Photos,https://squareup.com/gift/7DAHD8YNCVFZ2/or
 Other,Ann Arbor,Ita Yoga Studio ,https://clients.mindbodyonline.com/classic/ws?studioid=67391&stype=42,TRUE
 Barbers & Salons,Ann Arbor ,Gamma Piercing,https://gammapiercing.com/,TRUE
 Food & Drink,Ferndale,Schramm's Mead,https://store.schrammsmead.com/gift-boxes--certificates-c15.aspx,TRUE
-Food & Drink,Lansing,Green Dit Stables ,https://greendotstables.cardfoundry.com/giftcards.php?action=store,TRUE
+Food & Drink,Lansing,Green Dot Stables ,https://greendotstables.cardfoundry.com/giftcards.php?action=store,Duplicate
 Other,Ann Arbor,Real Irish - Gifts & Travel,https://realirish.com/products/gift-cards,TRUE
 Food & Drink,Ann Arbor|Grand Rapids,Le Bon Macaron,https://lebonmacaron.com/product/gift-card-bonus-card/,TRUE
 Food & Drink,Lansing,Cleats Bar & Grille,https://www.cleatsbarandgrille.com/store/gift-cards/,TRUE
@@ -347,9 +347,28 @@ Food & Drink,Ann Arbor,Ann Arbor Distilling Company,https://squareup.com/gift/G4
 Food & Drink,Royal Oak,Motor City Pasty Company,https://squareup.com/gift/702THH765SM3P/order,TRUE
 Food & Drink,Ann Arbor,Barry Bagels,https://barry-gear.myshopify.com,TRUE
 Books & Gifts,Royal Oak,Jenny’s Noodle,https://www.etsy.com/shop/JennysNoodleShop?section_id=25696235,TRUE
-Food & Drink,detroit,Chartreuse Kitchen & Cocktails,https://swipeit.com/product/2023/chartreuse-kitchen--cocktaisl,TRUE
+Food & Drink,Detroit,Chartreuse Kitchen & Cocktails,https://swipeit.com/product/2023/chartreuse-kitchen--cocktaisl,TRUE
 Barbers & Salons,Ann Arbor,Bella Des Natural Beauty ,https://bellades.com/index.php?route=account/voucher,TRUE
 Barbers & Salons,Lake Orion,Opal and Sage Skincare,https://app.acuityscheduling.com/catalog.php?owner=18549383,TRUE
 Books & Gifts,Wayne,Helium Studio,https://squareup.com/gift/HV02F92TWR9SR/order,TRUE
 Books & Gifts,Ann Arbor,The Dawn Treader Book Shop,https://shop.dawntreaderbooks.com,TRUE
-Food & Drink,"Ann Arbor, Michigan",El Harissa Market Cafe,https://squareup.com/gift/7GQYBXHR6MP1Y/order,TRUE
+Food & Drink,Ann Arbor,El Harissa Market Cafe,https://squareup.com/gift/7GQYBXHR6MP1Y/order,TRUE
+Books & Gifts,Detroit,John K. King Used & Rare Books,https://www.rarebooklink.com/advSearchResults.php?action=search&orderBy=relevance&category_id=0&keywordsField=gift+certificate,TRUE
+Food & Drink,Kalamazoo,Bell's Brewery,https://store.bellsbeer.com/products/gift-card?_pos=1&_sid=e55ac48d7&_ss=r,TRUE
+Food & Drink,Flint,Flint Crepe Company,https://squareup.com/gift/F5WJSR04F59GM/order,TRUE
+Other,Milford,Love & Rust,https://squareup.com/gift/F5619HKMZXPAY/order,TRUE
+Other,Milford,Main Street Art,https://mainstreetartmilford.com/products/gift-certificate?_pos=1&_sid=d9ad43204&_ss=r,TRUE
+Other,Whitmore Lake,Destruction Depot - Rage Room,https://www.destructiondepot.com/faqs,TRUE
+Other,Ann Arbor,Ann Arbor Running Company,https://www.annarborrunningcompany.com/collections/gift-cards,TRUE
+Books & Gifts,Ann Arbor,Crazy Wisdom Bookstore and Tea Room,http://crazywisdom.net/gift-shopping.html,TRUE
+Barbers & Salons,Ann Arbor,Mainstreet Massage Therapy,https://www.mstreetmassagetherapy.com/store/,TRUE
+Other,Ann Arbor,IM=X Pilates ,https://clients.mindbodyonline.com/classic/ws?studioid=712366&stype=42,TRUE
+Food & Drink,Detroit,Marrow,https://www.toasttab.com/marrow/giftcards,TRUE
+Food & Drink,Detroit,The Royce,https://www.theroycedetroit.com/giftcards,TRUE
+Barbers & Salons,Ann Arbor,Ivey,https://www.iveysalon.com/gift-card,TRUE
+Other,Ann Arbor,Theatre NOVA,https://theatre-nova.square.site/#VbrCKu,TRUE
+Other,Detroit,Ash & Erie,https://ashanderie.com/products/giftwizard-giftcard,TRUE
+Other,Saline,Saline Picture Frame Co.,https://www.salinepictureframe.com/saline-picture-frame-gift-card.html,TRUE
+Other,Milford,Music Time of Milford,https://www.musictimeofmilford.com/giftcertificates,TRUE
+Food & Drink,Ann Arbor,Cahoots Cafe,https://squareup.com/gift/JVKVZ0N61CAHB/order,TRUE
+Other,Highland,Essential Massage & Wellness Center LLC,https://essentialmassagewellnesscenter.fullslate.com/,TRUE
