@@ -314,6 +314,20 @@ article {
   }
 }
 
+#social-links {
+  a {
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 footer {
   text-align: center;
 }

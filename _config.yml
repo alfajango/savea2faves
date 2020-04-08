@@ -10,7 +10,8 @@ preview_image: "/img/save-mi-faves-preview.png"
 #google_groups: savemifaves
 #meetup: Save-MI-Faves
 twitter_username: saveMIfaves
-github_username:  alfajango/savemifaves
+twitter_message: "Michigan businesses need us more than ever – gift cards can make a big difference. Please join me in supporting your favorite restaurants & shops at https://www.saveMIfaves.org"
+github_username: alfajango/savemifaves
 google_analytics: "UA-161660791-1"
 
 # Build settings

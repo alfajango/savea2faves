@@ -23,6 +23,9 @@
       {% if site.twitter_username %}
         <li><a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><img src="/img/a2rb-social-icon-twitter.png" alt="Twitter icon" /></a></li>
       {% endif %}
+      {% if site.twitter_message %}
+        <li><a target="_blank" href="http://twitter.com/intent/tweet?text={{ site.twitter_message | url_encode }}">Tweet Your Support!</a></li>
+      {% endif %}
     </ul>
   </header>
 </div>
