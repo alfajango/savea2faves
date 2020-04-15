@@ -187,6 +187,11 @@ input {
   text-align: center;
   border-top: solid 8px #fff;
 
+  h2 {
+    color: #fff;
+    margin-top: 20px;
+  }
+
   a {
     color: #fff;
     display: block;
@@ -206,6 +211,52 @@ input {
     font-weight: bold;
     margin: 1rem 0 0.25rem;
   }
+}
+
+
+.post-splash-options {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.post-splash-options-option {
+  flex: 1 1 50%;
+  text-align: left;
+  padding: 0px 15px;
+  margin-right: 25px;
+  border: solid 1px;
+  border-radius: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.post-splash-options-option h3 {
+  color: #fff;
+  border-bottom: solid 1px #aaa;
+  padding-bottom: 15px;
+}
+
+.post-splash-options-option li {
+  margin-bottom: 15px;
+}
+
+.post-splash-option-emphasis {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.post-splash-option-emphasis-2 {
+  font-weight: bold;
+}
+.post-splash-option-emphasis-3 {
+  font-style: italic;
+}
+
+.post-splace-options-optino-logo {
+  width: 105px;
+  float: right;
+  margin-left: 5px;
 }
 
 .main article {
